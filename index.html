@@ -1,0 +1,72 @@
+<DOCTYPE html>
+  <html lang ="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Pesquisa Cantinho de Brincar do Dog</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+<h1 id="title">Cantinho de Brincar Dog Shelby</h1>
+<p id="description">Avalie o nosso Hotel! Ficaremos felizes em saber sua opinião!</p>
+<form id="survey-form">
+<section>
+  <fieldset>
+  <legend>Informações do Tutor:</legend>
+          <label id="name-label">Nome: <input id="name" type="text" placeholder="Digite seu Nome..." required></label>
+          <label id="email-label">Email: <input id="email" placeholder="Digite seu melhor email..." required ></label>
+</section>
+<section>
+  <fieldset>
+    <legend>Informações Caninas</legend>
+      <label id="nameDog-label">Nome: <input id="nameDog" type="text" placeholder="Digite o nome do cão..." required></label>
+  <label id="number-label">Idade: <input id="number" placeholder="idade" type="number" min="1" max="13"required></label>
+  </fieldset>        
+<section>
+   <fieldset>
+     <legend>Perguntas de Avaliação: </legend>
+  <fieldset>
+     <legend>Você gosta do local onde se encontra o Cantinho de Brincar?</legend>
+     <label>
+       <input id="stay-yes"  type="radio" name="yes-not" value="sim-radio" checked > Sim</label>
+     <label>
+       <input id="stay-not" type="radio" name="yes-not" value="sim-radio" > Não</label>
+  </fieldset>
+   <fieldset>
+       <legend>Você gosta da estrutura do nosso Hotel?</legend>
+       <label for="stay-yes2"><input id="stay-yes2" type="radio" name="yes-not2" value="sim-radio2" checked > Sim</label>
+       <label for="stay-not2"><input id="stay-not2" type="radio" name="yes-not2" value="nao-radio2"> Não</label> 
+   </fieldset>
+    <fieldset>
+      <legend>No período de estádia do seu cão no hotel, nós conseguimos atender suas necessidades de tutor?</legend>
+          <label for="stay-yes3"><input id="stay-yes3" class="inline" type="radio" name="yes-not3" value="yes-not3" checked > Sim</label>
+          <label for="stay-not3"><input id="stay-not3" class="inline" type="radio" name="yes-not3" value="nao-radio"  > Não</label> 
+    </fieldset>
+   <fieldset>  
+    <legend>Como você encontrou o nosso Hotel?</legend> 
+<select id="dropdown">
+  <option name="selecione" value="selecione-option">Selecione</option>
+  <option name="insta" value="instagram-option">Instagram</option>
+  <option name="face" value="facebook-option">Facebook</option>
+  <option name="recomendation" value="recomendation-option">Recomendação</option>
+</select>
+   </fieldset>
+  <fieldset>
+    <legend>Recomendaria nosso Hotel, para amigos?</legend>
+      <input type="radio" name="yes-not4" value="sim-radio" checked > Sim
+      <input type="radio" name="yes-not4" value="nao-radio"> Não
+  </fieldset>
+<label>Deixe sugestões de melhorias, críticas ou elogios:</label><textarea rows="5" cols="38"></textarea>
+
+
+<legend fo>Você aceita nossos Cookies?</legend>
+Eu aceito<input id="novidades" type="checkbox" value="accept">
+
+<legend>Você aceita receber emails com novidades?</legend>
+Eu aceito<input id="novidades" type="checkbox" value="accept">
+
+
+<button id="submit" type="submit" value="button">Submit</button>
+  </form>
+</body>
+
